@@ -215,8 +215,35 @@
 	<icon>image-crop</icon>
 	<name>PDF crop</name>
 	<unique-id>1628336152381306-5</unique-id>
-	<command>pdfcrop %f</command>
+	<command>pdfcrop --margins 1 %f</command>
 	<description>requires texlive-core</description>
+	<patterns>*.pdf</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>amazon</icon>
+	<name>Amazon Label Crop</name>
+	<unique-id>1656926334416560-3</unique-id>
+	<command>pdfcrop --margins &apos;-51 -211 -51 -56&apos;  %f</command>
+	<description></description>
+	<patterns>*.pdf</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>application-pdf</icon>
+	<name>PDF keep 1st page</name>
+	<unique-id>1656924911337683-2</unique-id>
+	<command>pdftk %f cat 1east output %f-portrait.pdf</command>
+	<description></description>
+	<patterns>*.pdf</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>document-print</icon>
+	<name>Print Label</name>
+	<unique-id>1656927811889813-4</unique-id>
+	<command>lpr  -o portrait  -P BCL-D1102 %f</command>
+	<description></description>
 	<patterns>*.pdf</patterns>
 	<other-files/>
 </action>
