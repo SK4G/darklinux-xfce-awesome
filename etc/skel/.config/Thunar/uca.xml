@@ -230,6 +230,15 @@
 	<other-files/>
 </action>
 <action>
+	<icon>amazon</icon>
+	<name>Amazon Label Crop Alt</name>
+	<unique-id>1657636288492209-1</unique-id>
+	<command>pdfcrop --margins &apos;-5 -243 -133 -224&apos;  %f</command>
+	<description></description>
+	<patterns>*.pdf</patterns>
+	<other-files/>
+</action>
+<action>
 	<icon>application-pdf</icon>
 	<name>PDF keep 1st page</name>
 	<unique-id>1656924911337683-2</unique-id>
