@@ -40,5 +40,7 @@ echo "################################################################"
 echo "###############      Building PKGBUILD      ####################"
 echo "################################################################"
 pkgname=$(basename "$PWD")
-cd /mnt/TEAM-1TB/darklinux/darklinux-pkgbuild/$pkgname-git
+
+destination=/mnt/SeagateNFS/darklinux/darklinux-pkgbuild
+cd $destination/$pkgname-git
 sh makepkg-v3.sh
